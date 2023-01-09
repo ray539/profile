@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>title page</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script>
+      function lighter(x) {
+        console.log('here');
+        x.style.backgroundColor = "#CCCCCC";
+      }
+      
+      function normalImg(x) {
+        x.style.backgroundColor = "#696969";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="img/mountains.png" class="background">
+        <img src="img/water-surface.png" class="foreground">
+        <div style="text-align: center;">
+          <h1 class="title"> Hello, I'm Ray.</h1>
+          <div class="title" style="font-size:50px">why don't you scroll down (slowly) and take a dive?</div>
+          
+        </div>
+        
+        
+      </header>
+
+      <div class="container">
+        <div style="height: 100px;"></div>
+  
+        <div class="circle-large" style="margin-left: 20%" id="welcome">
+          <i></i>
+          <j></j>
+          <div style="text-align:justify">
+            <h1>WELCOME</h1>
+            <p>Thank you for visiting my page! 
+              The purpose of this page is to flex 
+              all the CSS and HTML knowledge I have 
+              accumulated over the past 10 or so days. For example this
+              title card took literally forever to make.</p>
+            
+            <p>The code behind this is very jank and the visuals are not that great, but it's mine and I'm proud of it. So it is that great.</p>
+  
+            <p>To navigate the page, simply press the next button which will autoscroll
+              for you. Or if you prefer, you can scroll by yourself; I don't recommend this however because I want to show off the autoscroll.</p>
+          </div>
+          <br><br>
+  
+  
+  
+          <div style="text-align:center">
+            <div class="nav-button" onmouseover="lighter(this)" onmouseout="normalImg(this)">
+              <a class="no-link-color" href="#verify">next</a>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="break"></div>
+  
+        <div class = "circle-large" style="margin-left:40%;
+                                          background: radial-gradient(#dfe9fb, #6e9be7);" id="verify">
+          <i></i>
+          <j></j>
+          <h1>VERIFICATION</h1>
+          UNSW would like to make sure that you are indeed a student.
+          Please enter your username and password and click 'submit' below. 
+          <div style="font-size:10px">(for legal reasons this is joke;
+            the form below does nothing)</div>
+          <br><br>
+          <div class="form-border">
+            <form >
+              <label for="zId">zId</label><br>
+              <input type="text" id="zId" placeholder="z555555"><br>
+              <label for="zPass">zPass</label><br>
+              <input type="password" id="zPass" placeholder="iLikePizza123">
+            </form>
+  
+            <div style="color:red;display:none" class="message" id="troll">
+              you have been hacked
+              <button onClick="hideMessage()">OK</button>
+            </div>
+  
+            <button onClick="showMessage()">Submit</button>
+            <script>
+              function showMessage() {
+                document.getElementById("troll").style.display = "block";
+              }
+              function hideMessage() {
+                document.getElementById("troll").style.display = "none";
+              }
+            </script>
+          </div>
+          <br><br>
+          <div style="text-align:center">
+            <div class="nav-button" onmouseover="lighter(this)" onmouseout="normalImg(this)">
+              <a class="no-link-color" href="#about">next</a>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="break"></div>
+  
+        <div class="circle-large" style="margin-left:20%" id = "about">
+          <i></i>
+          <j></j>
+          <div style="text-align:center">
+            <h1>ABOUT ME</h1>
+          </div>
+          
+          <div style="margin:auto;padding:10px;width:80%;border:dashed;border-radius: 10px;">
+            <b>Name:</b> Yuang (Ray) <br>
+            <b>Home Country:</b> New Zealand<br>
+            <b>Degree:</b> SENG / MATH 🤓<br>
+            <b>Favourite Colour: </b>blue 🔵<br>
+            <b>Favourite Animal: </b> turtle 🐢<br>
+            <b>Peronality: </b> INTJ <img src='img/walterwhite.png' style="width:30px"> <br>
+            <b>Fav anime: </b> Attack on Titan <br>
+            <b>Fav UNSW course (so far): </b> COMP2521 <br>
+            <b>Least Fav UNSW course: </b> COMP1531 😡 <br>
+          </div>
+          <br><br>
+          <div style="text-align:center">
+            <div class="nav-button" onmouseover="lighter(this)" onmouseout="normalImg(this)">
+              <a class="no-link-color" href="#hobbies">next</a>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="break"></div>
+
+        <div class="circle-large" style="margin-left:40%;background: radial-gradient(#dfe9fb, #6e9be7);" id="hobbies" >
+          <div style="text-align:center;" >
+            <h1>HOBBIES</h1>
+            <div style="width:400px;margin:auto; text-align: center; font-size: 15px;">
+              <h2>PIANO</h2>
+              <img src="img/piano.png" width="100px">
+              <p>I sometimes play piano when I'm bored. Was quite serious when I was younger. Nowdays I just play anime covers :3.
+              </p>
+
+              <h2>LONG DISTANCE RUNNING</h2>
+              <img src="img/jogging.png" width="80px">
+              <p>Back in hsc I would be last in every running event (that's why I'm a turtle) ... except cross country.
+              </p>
+
+              <h2>GAMING</h2>
+              <img src="img/cuphead.png" width="100px">
+              <p>Currently trying to grind out cuphead (I suck tho). I like games, but only a specific kind of games. The kind that don't like me.
+              </p>
+
+              <div style="text-align:center;font-size: 30px;">
+                <div class="nav-button" onmouseover="lighter(this)" onmouseout="normalImg(this)">
+                  <a class="no-link-color" href="#youtubers">next</a>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="break"></div>
+
+        <div class="circle-large" style="margin-left:20%" id="youtubers">
+
+          <div style="text-align: center;">
+            <h1>YOUTUBERS</h1>
+            I watch a lot of youtube in my freetime. Here <br>are some cool ppl you should go subscribe to.
+            <br><br>
+          </div>
+
+          <div style="margin:auto;padding:10px;width:80%;border:dashed;border-radius: 10px;">
+
+            <table>
+              <tr>
+                <td width="100px"><img src="img/joma.jpg" width="70px" height="70px"></td>
+                <td style="text-align:justify"> Joma Tech: Relatable and funny skits about SENG.</td>
+              </tr>
+              <tr>
+                <td width="100px"><img src="img/animenz.jfif" width="70px" height="70px"></td>
+                <td style="text-align:justify"> Animenz: I wish I could be this good.</td>
+              </tr>
+              <tr>
+                <td width="100px"><img src="img/2set.jpg" width="70px" height="70px"></td>
+                <td style="text-align:justify"> TwoSet Violin: Comedy duo that never fails to make me laugh.</td>
+              </tr>
+              <tr>
+                <td width="100px"><img src="img/ninoshome.jpg" width="70px" height="70px"></td>
+                <td style="text-align:justify"> Nino's Home: Cooking channel for when I'm hungry at 3am.. to get even hungrier.</td>
+              </tr>
+            </table>
+            
+            
+          </div>
+          <br>
+          <div style="text-align:center">
+            <div class="nav-button" onmouseover="lighter(this)" onmouseout="normalImg(this)">
+              <a class="no-link-color" href="#video">next</a>
+            </div>
+          </div>
+
+
+        </div>
+        
+        <div class="break"></div>
+  
+        <div class="circle-large" style="margin-left:40%;background: radial-gradient(#dfe9fb, #6e9be7);" id = "video">
+          <i></i>
+          <j></j>
+          <div style="text-align:center">
+            <h1>FAVOURITE YOUTUBE VIDEO</h1>
+          </div>
+  
+          <div style="text-align: center;">
+            This is the greatest video of all time. 
+          </div>
+          <br>
+          
+          <script>
+            function changeColor(x, color) {
+              x.style.backgroundColor = color;
+            }
+          </script>
+  
+          <div style="text-align:center">
+            <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs&ab_channel=AllKindsOfStuff" target="_blank">
+              <button style="width:400px;
+              margin:auto;
+              text-align:center;
+              border-style: solid;
+              border-radius: 20px;
+              padding: 10px;
+              background-color: #9c9c9c;
+              cursor:pointer;
+              box-shadow: 5px 5px #000;" onmouseenter="changeColor(this, '#e1e1e1')" onmouseleave="changeColor(this, '#9c9c9c')">
+                <img src="img/play_button.png" width="200px">  
+              </button>
+              
+            </a>
+          </div>
+          <br><br>
+          <div style="text-align:center">
+            <div class="nav-button" onmouseover="lighter(this)" onmouseout="normalImg(this)">
+              <a class="no-link-color" href="#contact">next</a>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="break"></div>
+  
+        <div class="circle-large" style="margin-left:20%;" id = "contact">
+          <i></i>
+          <j></j>
+          <div style="text-align:center">
+            <h1>MY CONTACTS</h1>
+            <div style="font-size:22px">
+              Thank you for visiting my site! I'm pretty ded on my socials except for discord, so add me if you want. Bye!
+            </div>
+            <br>
+            
+          </div>
+  
+          <script>
+            function copyText(text) {
+              navigator.clipboard.writeText(text);
+            }
+  
+            function changeText(newText, id) {
+              document.getElementById(id).innerHTML = newText;
+            }
+  
+            function handleClick(newText, id, toCopy) {
+              changeText(newText, id);
+              copyText(toCopy);
+            }
+            
+          </script>
+  
+          <div style="width:500px; 
+                      margin:auto; 
+                      border-style: solid;
+                      border-radius: 20px; 
+                      background-color: #000;
+                      padding:20px">
+            
+            <div class="contact-border" onClick="handleClick('tag copied', 'discord-label', 'hi123#6541')"
+                                         onmouseleave="changeText('Discord: hi123#6541 click to copy', 'discord-label')">
+              <img src="img/discord_logo.png" class="contact-image">
+              <div class="contact-text" id="discord-label"> 
+                Discord: hi123#6541 click to copy
+              </div>
+            </div>
+  
+            <div style="height:20px"></div>
+  
+            <div class="contact-border" onClick="handleClick('tag copied', 'instagram-label', 'ray.wang123')"
+                                         onmouseleave="changeText('Instagram: ray.wang123 click to copy', 'instagram-label')">
+              <img src="img/instagram.png" class="contact-image">
+              <div class="contact-text" id="instagram-label"> 
+                Instagram: ray.wang123 click to copy
+              </div>
+            </div>
+  
+            <div style="height:20px"></div>
+  
+            <div class="contact-border" onClick="handleClick('tag copied', 'github-label', 'ray539')"
+                                         onmouseleave="changeText('Github: ray539 click to copy', 'github-label')">
+              <img src="img/github.png" class="contact-image">
+              <div class="contact-text" id="github-label"> 
+                Github: ray539 click to copy
+              </div>
+            </div>
+  
+          </div>
+          <br>
+          <div style="text-align:center">
+            <div class="nav-button" onmouseover="lighter(this)" onmouseout="normalImg(this)">
+              <a class="no-link-color" href="#welcome">ascend</a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+  </body>
+</html>
+

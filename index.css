@@ -1,0 +1,160 @@
+/* html {
+  scroll-behavior: smooth;
+} */
+
+.wrapper {
+  scroll-behavior: smooth;
+}
+
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background {
+  transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.background,
+.foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.title {
+  font-size: 7rem;
+  color: white;
+  text-shadow: 0 0 5px black;;
+}
+
+.container {
+  border-top: aqua;
+  border-top-style: solid;
+  border-top-width: 10px;
+  background-image: url("./img/background.jpg");
+  background-size: cover;
+}
+
+.circle-large{
+  width:800px;
+  height:800px;
+  --p: 15px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #deefffff;
+  font-size: 30px;
+  color: white;
+  font-family: 'Arial';
+  background: radial-gradient(#cde3f8ff, #70a4d5ff);
+  
+}
+
+i, j {
+  width: 50%;
+  height: 100%;
+  float: left;
+  shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #000);
+}
+
+j {
+  float: right;
+  shape-outside: radial-gradient(farthest-side at left, transparent calc(100% - var(--p)), #000);
+}
+
+
+.nav-button {
+  background-color: #696969;
+  border: none;
+  margin: auto;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+
+a.no-link-color:visited {
+  color: white;
+}
+
+a.no-link-color:link {
+  color: white;
+}
+
+.break {
+  height: 250px;
+}
+
+.form-border {
+  padding: 10px;
+  margin:auto;
+  width:500px;
+  height: auto;
+  border-radius: 10px;
+  border-style: solid;
+  background-color: rgb(205, 205, 205);
+}
+
+input[type=text], input[type=password]  {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-border {
+  cursor: pointer;
+  width:100%; 
+  border-style:solid; 
+  border-radius: 10px;
+  background-color: #9c9c9c;
+  text-align: center; 
+  position: relative;
+}
+
+.contact-image {
+  transition: 0.5s ease;
+  width: 80px;
+}
+
+.contact-text {
+  transition: 0.5s ease;
+  position: absolute;
+  opacity: 0;
+  width:90%;
+  border-style: solid;
+  background-color: rgb(1, 145, 145);
+  top:50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-border:hover .contact-image {
+  opacity: 0.3;
+}
+
+.contact-border:hover .contact-text {
+  opacity: 1;
+}
