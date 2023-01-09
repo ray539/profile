@@ -1,2 +1,2 @@
 # profile
-cool stuff
+profile page for UNSW trainee application.
